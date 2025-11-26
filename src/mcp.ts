@@ -338,6 +338,7 @@ export class MCPManager {
         transport: new Experimental_StdioMCPTransport({
           command: config.command,
           args: config.args,
+          stderr: 'ignore',
           env,
         }),
       });
